@@ -1,0 +1,132 @@
+:root {
+  /* Font scale heading */
+  --heading-font-size-xl: 5rem;
+  --heading-font-size-lg: 2.5rem;
+  --heading-font-size-md: 1.5rem;
+  --heading-font-size-sm: 1.2rem;
+
+  --font-weight-default: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
+
+  /* Font scale body text */
+  --text-font-size-xl: 1.5rem;
+  --text-font-size-lg: 1.333rem;
+  --text-font-size-md: 1rem;
+  --text-font-size-sm: 0.75rem;
+
+  /* Spacing */
+  --spacing-10: 0.625rem;
+  --spacing-15: 0.9375rem;
+  --spacing-20: 1.25rem;
+  --spacing-30: 1.875rem;
+  --spacing-40: 2.5rem;
+  --spacing-80: 5rem;
+
+  /* Border */
+  --border-none: none;
+  --border-radius: 4px;
+
+  /* Farver */
+  --white: #fff;
+  --blue: #87ceeb;
+  --red-600: #da5b4d;
+  --red-500: #f9786a;
+
+  /* Aliases */
+
+  /* h1 */
+  --heading-display: var(--heading-font-size-lg);
+  --heading-display-weight: var(--font-weight-bold);
+  --heading-display-space: var(--spacing-20);
+
+  /* h2 */
+  --heading-display-h2: var(--heading-font-size-md);
+  --headingh2-display-weight: var(--font-weight-bold);
+
+  /* h3 */
+  --heading-display-h3: var(--heading-font-size-sm);
+  --headingh3-display-weight: var(--font-weight-default);
+
+  /* h4 */
+  --heading-display-h4: var(--heading-font-size-sm);
+  --headingh3-display-weight: var(--font-weight-default);
+
+  /* text */
+  --text-display: var(--text-font-size-xl);
+  --text-1: var(--text-font-size-lg);
+  --text-2: var(--text-font-size-md);
+  --text-3: var(--text-font-size-sm);
+  --text-display-weight: var(--font-weight-semibold);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+.heading-h1 {
+  font-size: var(--heading-display);
+  font-weight: var(--heading-display-weight);
+  margin-bottom: var(--heading-display-space);
+}
+
+h2,
+.heading-h2 {
+  font-size: var(--heading-display-h2);
+  font-weight: var(--headingh2-display-weight);
+  margin-block: var(--heading-display-space);
+}
+
+h3,
+.heading-h3 {
+  font-size: var(--heading-display-h3);
+  font-weight: var(--headingh2-display-weight);
+  margin-block: var(--heading-display-space);
+}
+
+text {
+  font-size: var(--text-display);
+  line-height: var(--space-text);
+}
+
+.text-1 {
+  font-size: var(--text-1);
+  line-height: var(--space-text);
+}
+
+.text-2 {
+  font-size: var(--text-2);
+  line-height: var(--space-text);
+}
+
+.text-3 {
+  font-size: var(--text-3);
+  line-height: var(--space-text);
+}
+
+.btn {
+  background-color: var(--red-600);
+  cursor: pointer;
+  padding-inline: var(--spacing-20);
+  padding-block: var(--spacing-15);
+  border: var(--border-none);
+  border-radius: var(--border-radius);
+}
+
+.btn:hover {
+  background-color: var(--red-500);
+  color: var(--white);
+  padding-inline: var(--spacing-20);
+  padding-block: var(--spacing-15);
+}
+
+.card_heading_div {
+  background-color: var(--blue);
+}
+
+article {
+  max-width: 65ch;
+  margin: 5rem auto;
+}
